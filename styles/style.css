@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+html {font-size: 140%;}
+
+body {
+  font-family: sans-serif;
+  background-color: #FFFFFD;
+  margin: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  font-family: serif;
+  font-size: 14px;
+  text-align: justify;
+  margin: 0;
+  padding: 4px 8px;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 22px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'UnifrakturCook', cursive;
+  text-align: center;
+  font-size: 92px;
+}
+
+header div {
+  padding: 12px;
+  border: 1px solid #000;
+  margin: 6px;
+}
+
+nav {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  align-content: space-between;
+}
+
+section article {margin-top: 18px;}
+
+section article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 800px;
+  max-height: 1000px;
+  overflow: hidden;
+  padding-right: 4px;
+  margin-right: 10px;
+  border-right: 1px solid #000;
+}
+
+section article:first-of-type * {width: 50%;}
+
+section article:first-of-type h3{text-align: center;}
+
+section article:last-of-type {margin-top: 12px:}
+
+section article:last-of-type h2{
+  margin-bottom: 10px;
+  font-size: 52px;
+  text-align: center;
+}
+
+section article:last-of-type img{width: 100%;}
+
+@media (max-width: 1024px) {
+  section article:last-of-type {display: none;}
+
+  section article:first-of-type {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
